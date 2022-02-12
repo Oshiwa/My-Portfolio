@@ -1,4 +1,6 @@
-<!doctype html><html><head> 
+<!doctype html>
+<html>
+ <head> 
   <title>Oshiwa's Portfolio</title> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <meta charset="UTF-8"> 
@@ -8,22 +10,19 @@
        margin: 0;
        box-sizing: border-box;
         }
-        body{
-        background-color: white;
-        }
-        header{
-          margin: 10px;
-        }
-        .head{
-          margin: auto;
-          text-align: center;
-          padding: 70px;
-          color: white;
-          background-color: black;
-          border: 5px double silver;
-          border-radius: 10px;
-          font-family: rowdies;
-        }
+         header{
+        margin: 10px;
+       }
+       .head{
+         padding: 70px;
+         background-color: black;
+         margin: auto;
+         border: 5px double silver;
+         color: white;
+         border-radius: 10px;
+         text-align: center;
+         font-family: rowdies;
+       }
           #navbar{
           display: block;
           background-color: #333;
@@ -178,7 +177,7 @@
               margin: 0;
               margin-top: 10px ! important;
             }
-            h1{
+            .title{
               font-family: rowdies;
               padding: 14px;
               text-align: center;
@@ -204,11 +203,12 @@
       </style> 
  </head> 
  <body> 
-  <header> 
-   <div class="head"> 
-    <h1><span class="blink">OSHIWA'S</span> PORTFOLIO</h1> 
-   </div> 
-  </header> 
+  <span> 
+   <header> 
+    <div class="head"> 
+     <h1><span class="blink">OSHIWA'S</span> PORTFOLIO</h1> 
+    </div> 
+   </header> </span> 
   <div id="navbar"> 
    <a href="#">Home</a> 
    <a href="about.html" style="float: right;">About</a> 
@@ -216,7 +216,7 @@
    <a href="blog.html" style="float: right;">Blog</a> 
   </div> 
   <div class="my-profile"> 
-   <h1 style="padding: 10px; text-align: center;">MY PROFILE</h1> 
+   <h1 class="title" style="padding: 10px; text-align: center;">MY PROFILE</h1> 
   </div> 
   <div class="profile" style="border: 5px double black; color: black; margin: auto; background: url(https://i.imgur.com/2xAAo7O.jpg); background-repeat: no-repeat; background-size: 100% 100%;"> 
    <br> 
@@ -231,7 +231,7 @@
    <p style="font-size: px;"><strong>Interests:</strong> Coding, Learning Programming Language, Drawing, Digital Art, Video Games, Anime and Manga, K-pop, Creative Writing and Blogging.</p> 
   </div> 
   <div class="my-skill"> 
-   <h1 style="padding: 10px; text-align: center;">MY SKILLS</h1> 
+   <h1 class="title" style="padding: 10px; text-align: center;">MY SKILLS</h1> 
   </div> 
   <div class="skill-container"> 
    <h2>HTML/HTML5</h2> 
@@ -261,7 +261,7 @@
    </div> 
   </div> 
   <div class="my-project"> 
-   <h1 style="padding: 10px; text-align: center;">MY PROJECTS</h1> 
+   <h1 class="title" style="padding: 10px; text-align: center;">MY PROJECTS</h1> 
   </div> 
   <div class="project-container"> 
    <h2>CURRENTLY NONE</h2> 
@@ -275,5 +275,5 @@
   <footer> 
    <h5 class="copyright">© Oshiwa 2022</h5> 
   </footer> 
- 
-</body></html>
+ </body>
+</html>
