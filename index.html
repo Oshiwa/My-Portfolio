@@ -53,6 +53,13 @@ header{
 .right{
   float: right;
 }
+.right a{
+  color: white;
+  background-color: inherit;
+}
+.right:hover{
+   background: linear-gradient(to top, #0b0d12, #202938);
+}
 .nav-button{
   height: 70px;
   width: 100px;
@@ -69,7 +76,7 @@ header{
   margin: auto;
   display: block;
   border-radius: 100px;
-  border: 5px outset silver;
+  border: 5px solid white;
 }
 p{
   padding: 8px;
@@ -104,9 +111,13 @@ p{
   background: linear-gradient(to top, #11163b, #320999);
 }
 .js{
-  width: 10%;
+  width: 8%;
   background: linear-gradient(to top, #11163b, #320999);
   }
+.cpp{
+  width: 10%;
+  background: linear-gradient(to top, #11163b, #320999);
+}
 .bar{
   width: 100%;
   background: silver;
@@ -171,12 +182,15 @@ textarea{
   display: flex;
   overflow-x: auto;
   padding: 14px 16px;
-  background: white;
+  color: white;
+  border: 5px solid white;
+  border-radius: 50px;
 }
 .blog-content img{
   width: 300px;
   height: 250px;
   margin: 10px;
+  border-radius: 25px;
 }
 .blog-title{
   text-align: center;
@@ -194,8 +208,8 @@ footer{
 </style> 
  </head> 
  <body> 
-  <div class="navbar">
-    <button class="right nav-button">Oshiwa</button>
+  <div class="navbar"> 
+   <button class="right nav-button"><a href="#home">Oshiwa</a></button> 
    <div class="dropdown"> 
     <div class="nav-left"> 
      <button class="nav-button" style="text-align: center;">Menu</button> 
@@ -245,6 +259,12 @@ footer{
    <p>JavaScript</p> 
    <div class="bar"> 
     <div class="js skill">
+      8% 
+    </div> 
+   </div> 
+    <p>C++</p> 
+   <div class="bar"> 
+    <div class="cpp skill">
       10% 
     </div> 
    </div> 
@@ -280,16 +300,16 @@ footer{
    <br> 
    <hr> 
    <br> 
-   <p>Hello there! So, first of all let me introduce my self. I am currently using this name “Oshiwa” as my pen name, but, my real name is really Joshua Frederick Alcantara Bravo. Is it long? Well, some say it is, and maybe you're asking to your self “how did he came up with using “Oshiwa” as his pen name? Or are you not? Well, I'll answer it anyway even if you're not interested, haha.</p> 
+   <p>Hello there! So, first of all, let me introduce my self. I am currently using this name “Oshiwa” as my pen name, but, my real name is really Joshua Frederick Alcantara Bravo. Is it long? Well, some say it is, and maybe you're asking to your self “how did he came up with using “Oshiwa” as his pen name? Or are you not? Well, I'll answer it anyway even if you're not interested, haha.</p> 
    <p>So, the answer on that is when me and some of my friends are still a kid, we used to give each other a nickname... and so, that's it! “Oshiwa” was born! I personally like this “Oshiwa” name so I keep using it on any games I played and some social medias I'm in.</p> 
    <p>I am currently a first year college student with the course “Bachelor of Science in Information Technology”, and I'm hoping that I can survive this course (‘cause I'm lazy af! haha).</p> 
-   <p>So, to end this. The reason why I made this portfolio is to test my skills and knowledge in coding (also to showcase my “Trash Art” haha) and as you can see I am not yet good at it. I only know how to code basic HTML and CSS. I don't have any skills in coding JavaScript yet to make this Portfolio looks a lot better and professional. That's all, I hope you enjoy reading this “About” page haha.</p> 
+   <p>So, to end this. The reason why I made this portfolio is to test my skills and knowledge in coding (also to showcase my “Trash Art” haha) and as you can see I am not yet good at it. I only know how to code basic HTML and CSS. I don't have any skills in coding JavaScript yet to make this Portfolio looks a lot better and professional. That's all, I hope you enjoy reading this “About” page haha!</p> 
    <p>I'll just leave this thing here:</p> 
-   <p><i><b>“A small progress is still a progress. So don't give up when you are not yet finished.”</b></i></p> 
+   <p><b>“A small progress is still a progress. So don't give up when you are not yet finished.”</b></p> 
   </div> 
   <div class="container"> 
-   <h1 class="title" id="contact">Contact Me</h1>
-   <p style="text-align: center;">currently not working</p>
+   <h1 class="title" id="contact">Contact Me</h1> 
+   <p style="text-align: center;">currently not working</p> 
    <hr> 
    <br> 
    <hr> 
