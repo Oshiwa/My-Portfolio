@@ -1,279 +1,349 @@
 <!doctype html>
 <html>
  <head> 
-  <title>Oshiwa's Portfolio</title> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <meta charset="UTF-8"> 
+  <meta charset="utf-8"> 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Berkshire+Swash&family=Carter+One&family=Chakra+Petch:wght@300&family=Cookie&family=Courgette&family=Creepster&family=Gloria+Hallelujah&family=Great+Vibes&family=Kaushan+Script&family=Orbitron&family=Pacifico&family=Pangolin&family=Parisienne&family=Playball&family=Quintessential&family=Righteous&family=Rowdies:wght@300&family=Sacramento&family=Tangerine&family=Yellowtail&display=swap');
-        *{
-       margin: 0;
-       box-sizing: border-box;
-        }
-         header{
-        margin: 10px;
-       }
-       .head{
-         padding: 70px;
-         background-color: black;
-         margin: auto;
-         border: 5px double silver;
-         color: white;
-         border-radius: 10px;
-         text-align: center;
-         font-family: rowdies;
-       }
-          #navbar{
-          display: block;
-          background-color: #333;
-          overflow: hidden;
-          }
-          #navbar a{
-            text-decoration: none;
-            color: white;
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 15px;
-            font-family: rowdies;
-          }
-          #navbar a:hover{
-          background-color: red;
-          }
-             .profile{
-            display: grid;
-            grid-template-rows: auto-fit;
-            background-color: black;
-            color: white;
-            margin-top: 10px !important;
-            border: 5px double silver;
-            border-radius: 10px;
-            margin: auto;
-            }
-             .my-profile{
-            display: grid;
-            grid-template-rows: auto-fit;
-            background-color: black;
-            color: white;
-            margin-top: 10px !important;
-            border: 5px double silver;
-            border-radius: 10px;
-            margin: auto;
-            animation-name: mp-anim;
-            animation-duration: 0.3s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            }
-             @keyframes mp-anim{
-              0%{color: black;}
-              100%{color: white;}
-            }
-            .skill-container{
-            display: grid;
-            grid-template-rows: auto-fit;
-            background-color: black;
-            color: white;
-            margin-top: 10px !important;
-            border: 5px double silver;
-            border-radius: 10px;
-            margin: auto;
-            }
-              .my-skill{
-            display: grid;
-            grid-template-rows: auto-fit;
-            background-color: black;
-            color: white;
-            margin-top: 10px !important;
-            border: 5px double silver;
-            border-radius: 10px;
-            margin: auto;
-            width: fit;
-            animation-name: ms-anim;
-            animation-duration: 0.3s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            }
-             @keyframes ms-anim{
-              0%{color: black;}
-              100%{color: white;}
-            }
-             .my-project{
-            display: grid;
-            grid-template-rows: auto-fit;
-            background-color: black;
-            color: white;
-            margin-top: 10px !important;
-            border: 5px double silver;
-            border-radius: 10px;
-            margin: auto;
-            width: fit;
-            animation-name: mp2-anim;
-            animation-duration: 0.3s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            }
-             @keyframes mp2-anim{
-              0%{color: black;}
-              100%{color: white;}
-            }
-            .post-container{
-              display: grid;
-              margin: auto;
-              align-items: center;
-            }
-            .profile-pic{
-              width: 215px;
-              border-radius: 50%;
-              height: 215px;
-              margin: auto;
-              border-style: groove;
-              border: 3px solid white;
-              margin-bottom: 20px;
-            }
-            .project-container{
-            display: grid;
-            grid-template-rows: auto-fit;
-            background-color: black;
-            color: white;
-            margin-top: 10px !important;
-            border: 5px double silver;
-            border-radius: 10px;
-            margin: auto;
-            }
-            .profile-description{
-              background-color: black;
-              width: 95%;
-              margin: auto;
-              border-radius: 10px;
-              border: 3px double silver;
-            }
-            .description{
-              text-align: center;
-              padding: 8px;
-              color: white;
-            }
-            img{
-              width: 90%;
-              height: 90%;
-              border-radius: 10px;
-              margin: auto;
-            }
-            p{
-              margin: 8px;
-              text-align: justify;
-              font-family: chakra petch;
-              color: white;
-            }
-            footer{
-              font-family: orbitron;
-              background-color: black;
-              text-align: center;
-              color: white;
-              margin: 0;
-            }
-            .copyright{
-              padding: 14px;
-              margin: 0;
-              margin-top: 10px ! important;
-            }
-            .title{
-              font-family: rowdies;
-              padding: 14px;
-              text-align: center;
-            }
-            h2{
-              font-family: rowdies;
-              padding: 14px;
-              text-align: center;
-            }
-            .blink{
-              animation-name: blink;
-              animation-iteration-count: infinite;
-              animation-duration: 1s;
-              animation-direction: alternate;
-            }
-            @keyframes blink{
-              0%{color: blue;}
-              25% {color: red;}
-              50% {color: green;}
-              75% {color: yellow;}
-              100% {color: #f27a11;}
-            }
-      </style> 
+    *{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #3c434f;
+  width: 100%;
+}
+header{
+  text-align: center; 
+  padding: 25px;
+  color: white;
+  font-family: rowdies;
+ }
+.navbar{
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+.navbar a{
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  background: #3c434f;
+  font-family: rowdies;
+}
+.dropdown{
+  float: left;
+  overflow: hidden;
+}
+.dropdown-content{
+  display: none;
+}
+.dropdown-content a{
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+.dropdown:hover .dropdown-content{
+  display: grid;
+}
+.dropdown-content a:hover {
+  background-color: red;
+}
+.right{
+  float: right;
+}
+.nav-button{
+  height: 70px;
+  width: 100px;
+  text-align: center;
+  border: none;
+  color: white;
+  background: linear-gradient(to top, #0b0d12, #202938);
+  font-size: 25px;
+  outline: none;
+  font-family: rowdies;
+}
+.profile{
+  width: 90%;
+  margin: auto;
+  display: block;
+  border-radius: 100px;
+  border: 5px outset silver;
+}
+p{
+  padding: 8px;
+  color: white;
+  font-family: chakra petch;
+  font-size: 18px;
+  text-align: justify;
+}
+.container{
+  background: linear-gradient(to top, #0b0d12, #202938);
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 14px 14px;
+  display: grid;
+  grid-template-rows: auto-fit;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.skill{
+  padding: 10px;
+  text-align: right;
+  color: white;
+  background: linear-gradient(to top, #11163b, #320999);
+}
+.css{
+  width: 50%;
+  background: linear-gradient(to top, #11163b, #320999);
+  }
+.html{
+  width: 75%;
+  background: linear-gradient(to top, #11163b, #320999);
+}
+.js{
+  width: 10%;
+  background: linear-gradient(to top, #11163b, #320999);
+  }
+.bar{
+  width: 100%;
+  background: silver;
+}
+.wb{
+ width: 65%;
+ background: linear-gradient(to top, #11163b, #320999);
+}
+.dga{
+ width: 75%;
+ background: linear-gradient(to top, #11163b, #320999);
+}
+.cw{
+ width: 85%;
+ background: linear-gradient(to top, #11163b, #320999);
+}
+.title{
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-family: orbitron;
+}
+hr{
+  width: 100%;
+}
+form{
+  width: 95%;
+  margin: auto;
+  display: inline;
+}
+label{
+  color: white;
+  font-family: rowdies;
+}
+input{
+  width: 100%;
+  font-family: chakra petch;
+  margin: auto;
+  height: 30px;
+}
+textarea{
+  height: 75px;
+  width: 100%;
+  font-size: 12px;
+  margin: auto;
+}
+.submit{
+  width: 50%;
+  font-family: chakra petch;
+  margin: auto;
+  height: 25px;
+}
+.skill-set{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill-set p{
+  font-size: 16px;
+}
+.blog-content{
+  display: flex;
+  overflow-x: auto;
+  padding: 14px 16px;
+  background: white;
+}
+.blog-content img{
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+}
+.blog-title{
+  text-align: center;
+  font-family: rowdies;
+}
+footer{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background: linear-gradient(to top, #0b0d12, #202938);
+  font-family: orbitron;
+}
+</style> 
  </head> 
  <body> 
-  <span> 
-   <header> 
-    <div class="head"> 
-     <h1><span class="blink">OSHIWA'S</span> PORTFOLIO</h1> 
+  <div class="navbar"> 
+   <button class="right nav-button">Oshiwa</button> 
+   <div class="dropdown"> 
+    <div class="nav-left"> 
+     <button class="nav-button" style="text-align: center;">Menu</button> 
+     <div class="dropdown-content"> 
+      <a href="#blog">Blog</a> 
+      <a href="#contact">Contact</a> 
+      <a href="#about">About</a> 
+     </div> 
     </div> 
-   </header> </span> 
-  <div id="navbar"> 
-   <a href="#">Home</a> 
-   <a href="about.html" style="float: right;">About</a> 
-   <a href="contact.html" style="float: right;">Contact</a> 
-   <a href="blog.html" style="float: right;">Blog</a> 
+   </div> 
   </div> 
-  <div class="my-profile"> 
-   <h1 class="title" style="padding: 10px; text-align: center;">MY PROFILE</h1> 
-  </div> 
-  <div class="profile" style="border: 5px double black; color: black; margin: auto; background: url(https://i.imgur.com/2xAAo7O.jpg); background-repeat: no-repeat; background-size: 100% 100%;"> 
+  <header> 
+   <h1>My Portfolio</h1> 
+  </header> 
+  <div class="container"> 
+   <h2 class="title">Joshua Frederick Bravo</h2> 
    <br> 
-   <img class="profile-pic" src="https://i.imgur.com/YS2bEE1.jpg"> 
-  </div> 
-  <div class="profile-description"> 
-   <h2 class="description">WELCOME TO MY PROFILE</h2> 
    <hr> 
    <br> 
    <hr> 
-   <h3 style="color: white; font-family: chakra petch;" class="description"><b>I am Joshua Frederick A. Bravo.</b></h3> 
-   <p style="font-size: px;"><strong>Interests:</strong> Coding, Learning Programming Language, Drawing, Digital Art, Video Games, Anime and Manga, K-pop, Creative Writing and Blogging.</p> 
-  </div> 
-  <div class="my-skill"> 
-   <h1 class="title" style="padding: 10px; text-align: center;">MY SKILLS</h1> 
-  </div> 
-  <div class="skill-container"> 
-   <h2>HTML/HTML5</h2> 
-   <hr> 
-   <p>Level of Expertise: Novice</p> 
-   <hr> 
-   <div class="post-container"> 
-    <img src="https://i.imgur.com/NQ3WEHX.jpg"> 
+   <br> 
+   <img class="profile" src="https://i.imgur.com/2xAAo7O.jpg"> 
+   <br> 
+   <h3 class="title">A Begginer In</h3> 
+   <div class="skill-set"> 
+    <p>Web Design + Digital Drawing + Creative Writing</p> 
    </div> 
   </div> 
-  <div class="skill-container"> 
-   <h2>CSS/CSS3</h2> 
+  <div class="container"> 
+   <h1 class="title">Coding Skills</h1> 
    <hr> 
-   <p>Level of Expertise: Novice</p> 
+   <br> 
    <hr> 
-   <div class="post-container"> 
-    <img src="https://i.imgur.com/UUWN8lk.jpg"> 
+   <br> 
+   <p>HTML</p> 
+   <div class="bar"> 
+    <div class="html skill">
+      75% 
+    </div> 
+   </div> 
+   <p>CSS</p> 
+   <div class="bar"> 
+    <div class="css skill">
+      50% 
+    </div> 
+   </div> 
+   <p>JavaScript</p> 
+   <div class="bar"> 
+    <div class="js skill">
+      10% 
+    </div> 
    </div> 
   </div> 
-  <div class="skill-container"> 
-   <h2>JAVASCRIPT</h2> 
+  <div class="container"> 
+   <h1 class="title">Skills</h1> 
    <hr> 
-   <p>Level of Expertise: None</p> 
+   <br> 
    <hr> 
-   <div class="post-container"> 
-    <img src="https://i.imgur.com/FN38afl.jpg"> 
+   <br> 
+   <p>Web Design</p> 
+   <div class="bar"> 
+    <div class="wb skill">
+      55% 
+    </div> 
+   </div> 
+   <p>Digital Art (Drawing)</p> 
+   <div class="bar"> 
+    <div class="dga skill">
+      75% 
+    </div> 
+   </div> 
+   <p>Creative Writing</p> 
+   <div class="bar"> 
+    <div class="cw skill">
+      85% 
+    </div> 
    </div> 
   </div> 
-  <div class="my-project"> 
-   <h1 class="title" style="padding: 10px; text-align: center;">MY PROJECTS</h1> 
+  <div class="container"> 
+   <h1 class="title" id="about">About Me</h1> 
+   <hr> 
+   <br> 
+   <hr> 
+   <br> 
+   <p>Hello there! So, first of all let me introduce my self. I am currently using this name “Oshiwa” as my pen name, but, my real name is really Joshua Frederick Alcantara Bravo. Is it long? Well, some say it is, and maybe you're asking to your self “how did he came up with using “Oshiwa” as his pen name? Or are you not? Well, I'll answer it anyway even if you're not interested, haha.</p> 
+   <p>So, the answer on that is when me and some of my friends are still a kid, we used to give each other a nickname... and so, that's it! “Oshiwa” was born! I personally like this “Oshiwa” name so I keep using it on any games I played and some social medias I'm in.</p> 
+   <p>I am currently a first year college student with the course “Bachelor of Science in Information Technology”, and I'm hoping that I can survive this course (‘cause I'm lazy af! haha).</p> 
+   <p>So, to end this. The reason why I made this portfolio is to test my skills and knowledge in coding (also to showcase my “Trash Art” haha) and as you can see I am not yet good at it. I only know how to code basic HTML and CSS. I don't have any skills in coding JavaScript yet to make this Portfolio looks a lot better and professional. That's all, I hope you enjoy reading this “About” page haha.</p> 
+   <p>I'll just leave this thing here:</p> 
+   <p><i><b>“A small progress is still a progress. So don't give up when you are not yet finished.”</b></i></p> 
   </div> 
-  <div class="project-container"> 
-   <h2>CURRENTLY NONE</h2> 
+  <div class="container"> 
+   <h1 class="title" id="contact">Contact Me</h1> 
    <hr> 
-   <p style="text-align: center;"> As of February 11 2022</p> 
+   <br> 
    <hr> 
-   <div class="post-container"> 
+   <br> 
+   <form action="index.php" method="POST"> 
+    <label for="Name">Name:</label> 
     <br> 
+    <input name="Name" type="name" placeholder="ex. John Doe" required> 
+    <br> 
+    <label for="Email">Email:</label> 
+    <br> 
+    <input name="Email" type="email" placeholder="ex. johndoe@gmail.com" required> 
+    <br> 
+    <label for="Message">Message:</label> 
+    <br> 
+    <textarea name="Message" placeholder=" ex. Oshiwa is cute."></textarea> 
+    <br> 
+    <button class="submit">Send Message</button> 
+   </form> 
+  </div> 
+  <div class="container"> 
+   <h1 class="title" id="blog">Blogs</h1> 
+   <p style="text-align: center;">but currently just a collection of images</p> 
+   <hr> 
+   <br> 
+   <hr> 
+   <br> 
+   <div class="blog-content"> 
+    <div class="blog-title">
+     <h2>Moon and Stars</h2> 
+     <a href="#"><img src="https://i.imgur.com/CcKgS1h.png"></a> 
+    </div> 
+    <div class="blog-title">
+     <h2>Twice</h2> 
+     <a href="#"><img src="https://i.imgur.com/fsb0dfv.jpg"></a> 
+    </div> 
+    <div class="blog-title">
+     <h2>Butterfly</h2> 
+     <a href="#"><img src="https://i.imgur.com/2xAAo7O.jpg"></a> 
+    </div> 
+    <div class="blog-title">
+     <h2>My Wifeu</h2> 
+     <a href="#"><img src="https://i.imgur.com/anVDPtU.jpg"></a> 
+    </div> 
+    <div class="blog-title">
+     <h2>(G)I-dle</h2> 
+     <a href="#"><img src="https://i.imgur.com/gaJUon9.jpg"></a> 
+    </div> 
+    <div class="blog-title">
+     <h2>Fafa JYP</h2> 
+     <a href="#"><img src="https://i.imgur.com/7fIQ4Zw.jpg"></a> 
+    </div> 
    </div> 
   </div> 
   <footer> 
-   <h5 class="copyright">© Oshiwa 2022</h5> 
+   <h3>© Oshiwa 2022</h3> 
   </footer> 
  </body>
 </html>
